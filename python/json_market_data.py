@@ -133,7 +133,7 @@ stock_info_df.to_sql(name='stock_info_data', con=conn, if_exists='replace', \
 						schema='stockdata', chunksize=20, method='multi')
 
 # Write to CSV file
-# stock_info_df.to_csv('stock_info_data.csv', index = False, header = True)
+stock_info_df.to_csv('stock_info_data.csv', index = False, header = True)
 
 # Create a basic line chart from date and close from stock info dataframe
 plt.figure(figsize= (20,9))
