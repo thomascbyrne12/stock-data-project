@@ -28,7 +28,6 @@ data = response.json()
 # Creating a dataframe from the data to pull information from
 data_df = pd.DataFrame(data)
 
-
 # The closing, open, high, low, etc prices for each day in a grouped list. And column names respectively
 bulk_price_data = (data_df.iat[3,0])
 column_names = data_df.iat[2,0]

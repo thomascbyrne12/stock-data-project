@@ -13,6 +13,5 @@ CREATE TABLE stock_info_data (
 	adj_high FLOAT,
 	adj_low FLOAT,
 	adj_close FLOAT,
-	adj_volume FLOAT
-);
+	adj_volume INT
 );
